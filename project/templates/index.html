@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head lang="en">
+    <meta charset="UTF-8">
+    <title>Flask React</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- styles -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet'  type='text/css'>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='bower_components/bootstrap/dist/css/bootstrap.min.css') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>-->
+  </head>
+  <body>
+
+
+
+
+
+
+    <div class="container">
+      <div class="page-header">
+        <h1>Intelligent Water Jug Problem Solver</h1>
+      </div>
+
+      <div class="jumbotron" style="background-color: #2E2D88">
+        <p> This is a step by step solution to <a target="_blank" href="https://en.wikipedia.org/wiki/Liquid_water_pouring_puzzles" >Water Jug Problem</a>. Select the capacity of each jug and select the goal you want to reach.
+          You can try the <a target="_blank" href="https://www.mathsisfun.com/games/jugs-puzzle.html" >actual puzzle here.</a></p>
+      </div>
+
+      <div align="center" class="mainbody">
+
+        <div id="optionPanel"></div>
+
+        <br>
+
+        <div  id="main"></div>
+      </div>
+
+    </div>
+
+    <!-- scripts -->
+
+    <script src="{{ url_for('static', filename='bower_components/react/react.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='bower_components/react/react-dom.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='scripts/js/main.js') }}"></script>
+    <script src="{{ url_for('static', filename='scripts/js/header.js') }}"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"></script>-->
+  </body>
+</html>
