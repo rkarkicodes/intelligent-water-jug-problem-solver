@@ -2,7 +2,7 @@ from prettytable import PrettyTable
 import calculate as calc
 import itertools
 from Queue import Queue
-from pprint import pprint
+# from pprint import pprint
 
 class Searches(object):
 
