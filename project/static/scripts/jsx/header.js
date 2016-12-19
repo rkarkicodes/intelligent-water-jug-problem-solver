@@ -117,13 +117,13 @@ class Header extends React.Component{
         return(
         <div id="this"  style={divStyle}>
 
-                <label > JUG  </label>
+                <label > JUG A </label>
                 <Options name={"juga"}  />
 
                 &nbsp;
                 &nbsp;
 
-                <label> JUG  </label>
+                <label> JUG B </label>
                 <Options name={"jugb"} />
 
                 &nbsp;

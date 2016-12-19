@@ -118,13 +118,13 @@ class Header extends React.Component{
         return(
         React.createElement("div", {id: "this", style: divStyle}, 
 
-                React.createElement("label", null, " JUG  "), 
+                React.createElement("label", null, " JUG A "), 
                 React.createElement(Options, {name: "juga"}), 
 
                 " " + ' ' +
                 " ", 
 
-                React.createElement("label", null, " JUG  "), 
+                React.createElement("label", null, " JUG B "), 
                 React.createElement(Options, {name: "jugb"}), 
 
                 " " + ' ' +
