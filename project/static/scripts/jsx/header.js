@@ -7,38 +7,32 @@ class Step extends React.Component{
             render(){
 
             var divStyle={
-                    display: "block",
+                    display: "inline-block",
                     padding: 10,
                     justifyContent: "space-between",
-                    maxWidth: 400,
-                    minHeight: 40,
+                    width: 300,
+                    minHeight: 60,
                     backgroundColor:"#0a50b4",
                     margin:"10px",
                     color:"black",
                     textAlign:"center",
                     fontFamily:'Courier New',
-                    fontWeight: 600
+                    fontWeight: 600,
+
                       };
 
+            var spanStyle={
 
-                if (this.props.steps===undefined){
+                    display: "inline-block"
 
-                    return (
-                        <div style={divStyle}> this is it</div>
-
-                        )
-                }else{
-                    return(
-
-                    <div style={divStyle}> {this.props.steps}</div>
-
-
-
-            )
             }
-         }
+                    return(
+                    <div>
+                            <div style={divStyle}> {this.props.steps}</div>
+                    </div>
 
-
+                    )
+            }
 }
 
 function body(result){
@@ -97,7 +91,7 @@ class Header extends React.Component{
     clicked(e){
                 $.ajax({
                 type : "POST",
-                url : "/this",
+                url : "/result",
                 data:JSON.stringify({
                     jug_a: $('select[name="juga"]').val(),
                     jug_b: $('select[name="jugb"]').val(),
@@ -106,9 +100,6 @@ class Header extends React.Component{
                 contentType: 'application/json;charset=UTF-8',
                 success: function(result) {
                     body(result.result);
-//                    console.log(result);
-//                    console.log(result.result['steps']);
-//                    console.log(result.result['state_sequence']);
                 }
                 });
                 $('#this *').prop('disabled',true);
@@ -121,22 +112,24 @@ class Header extends React.Component{
                     justifyContent: "space-between",
                     maxWidth: 450,
                       };
+
+
         return(
         <div id="this"  style={divStyle}>
 
-                <div> JUG A </div>
+                <label > JUG A </label>
                 <Options name={"juga"}  />
 
                 &nbsp;
                 &nbsp;
 
-                <div> JUG B </div>
+                <label> JUG B </label>
                 <Options name={"jugb"} />
 
                 &nbsp;
                 &nbsp;
 
-                <div> GOAL </div>
+                <label> GOAL </label>
                 <Goal name={"goal"}/>
                 &emsp;
 
