@@ -13,9 +13,6 @@ def index():
 @app.route('/result', methods=['GET','POST'])
 def result():
 
-    # print dir(request)
-    # print request.get_data()
-    # print request.values
     juga=int(request.json['jug_a'])
     jugb = int(request.json['jug_b'])
     goal = int(request.json['goal'])
