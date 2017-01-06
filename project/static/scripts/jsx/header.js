@@ -1,7 +1,7 @@
 var _juga=0;
 var _jugb=0;
 var result={};
-//var $ = require('jQuery');
+
 
 class Step extends React.Component{
             render(){
@@ -162,17 +162,6 @@ class Options extends React.Component{
     }
 
     render(){
-//        var style_it ={
-//                border: "1 none",
-//                fontSize: 20,
-//                fontWeight: "bold",
-//                width: 60,
-//                height: 40,
-//                textAlign: "center"
-//
-//            }
-
-
         return(
               <select class= "opt" name={this.props.name}  onChange={this.changeValue.bind(this)} >
                 {this.state.val}
