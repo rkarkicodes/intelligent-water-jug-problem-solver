@@ -84,6 +84,5 @@ class Searches(object):
 
 # a=Searches(3,8,4)
 # a=Searches(4,9,5)
-a=Searches(9,4,5)
-
-print a.breadth_first()
+#a=Searches(9,4,5)
+#print a.breadth_first()
